@@ -78,8 +78,8 @@ Two options how to get images are available. By pulling images directly from Doc
 
 ######a) Download from Docker hub
 ```
-$ docker pull souzafilipe91/hadoop-master:latest
-$ docker pull souzafilipe91/hadoop-slave:latest
+$ docker pull krejcmat/hadoop-master:latest
+$ docker pull krejcmat/hadoop-slave:latest
 ```
 
 ######b)Build from sources(Dockerfiles)
@@ -123,8 +123,8 @@ start slave1 container...
 ```
 $ serf members
 
-master.souzafilipe91.com  172.17.0.2:7946  alive  
-slave1.souzafilipe91.com  172.17.0.3:7946  alive
+master.krejcmat.com  172.17.0.2:7946  alive  
+slave1.krejcmat.com  172.17.0.3:7946  alive
 ```
 
 
