@@ -4,7 +4,7 @@ image=$1
 tag='latest'
 
 
-if [ $1 = 0 ]
+if [ $1 -eq 0 ]
 then
 	echo "Please use image name as the first argument!"
 	exit 1
@@ -23,7 +23,7 @@ function docker_build()
 {
 	cd $1
 	echo -e "\n\ndocker build -t krejcmat/$1:$tag ."
-	/usr/bin/time -f "real  %e"  docker build -t krejcmat/$1:$tag .
+	docker build -t krejcmat/$1:$tag .
 	cd ..
 }
 

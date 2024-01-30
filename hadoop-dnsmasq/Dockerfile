@@ -18,7 +18,7 @@ rm -rf /tmp
 ADD dnsmasq/* /etc/
 
 # install serf
-RUN  wget -q -o out.log -P /tmp/ https://releases.hashicorp.com/serf/0.7.0/serf_0.7.0_linux_amd64.zip && \
+RUN  wget -q -O out.log -P /tmp/ https://releases.hashicorp.com/serf/0.7.0/serf_0.7.0_linux_amd64.zip && \
 rm -rf /bin/serf
 
 RUN unzip /tmp/serf_0.7.0_linux_amd64.zip -d /bin && \

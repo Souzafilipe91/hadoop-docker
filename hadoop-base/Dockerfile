@@ -59,7 +59,7 @@ mv /usr/local/ssh_config ~/.ssh/config && \
 sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 #install hadoop 2.7.3
-RUN wget -q -o out.log -P /tmp http://www.trieuvan.com/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && \
+RUN wget -q -O out.log -P /tmp http://www.trieuvan.com/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && \
 tar xzf /tmp/hadoop-2.7.3.tar.gz -C /usr/local && \
 rm /tmp/hadoop-2.7.3.tar.gz && \
 mv /usr/local/hadoop-2.7.3 /usr/local/hadoop && \
