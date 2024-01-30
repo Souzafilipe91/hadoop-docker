@@ -69,7 +69,7 @@ $ tree
 ###Usage
 ####1] Clone git repository
 ```
-$ git clone https://github.com/krejcmat/hadoop-docker.git
+$ git clone https://github.com/Souzafilipe91/hadoop-docker.git
 $ cd hadoop-docker
 ```
 
